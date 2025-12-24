@@ -1,0 +1,24 @@
+name: GitHub Actions Zero
+
+on: [push]
+
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
+      - name: Hello World
+        run: echo "Hello, World!"
+
+      - name: Show date
+        run: date
+
+      - name: Show directory
+        run: pwd
+
+      - name: List files
+        run: ls -la
+
+        Add first workflow
